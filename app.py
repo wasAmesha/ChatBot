@@ -70,9 +70,9 @@ while True:
 
         response=client.chat.completions.create(
             model="gpt-3.5-turbo",
-            max_tokens=50,
-            n=1,
-            temperature=0.3,
+            max_tokens=50,      #number of words in response
+            n=1,                #number of resposes
+            temperature=0.3,    #give variety between responses
             messages=[
                 {"role":"user","content": question}
             ]
